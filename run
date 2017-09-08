@@ -1,0 +1,5 @@
+#!/bin/bash
+docker run -it --rm --security-opt seccomp=unconfined \
+	-e DISPLAY=$DISPLAY \
+	-v "$PWD":/root/app/ \
+	-w /root/app ctf /bin/bash
