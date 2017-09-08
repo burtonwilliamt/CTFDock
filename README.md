@@ -1,8 +1,8 @@
-#CTFDock
+# CTFDock
 I use a mac as my daily driver. Most of the time this is great, but when I want to work on CTFs or other linux-specific applications,
 I need a linux machine with a whole bunch of specific tools.
 
-###Why Docker?
+### Why Docker?
 Most of the people that I know do CTFs run linux as their main OS, or at least dual boot. Many are running arch.
 For whatever reason, I don't roll this way. Partially because I think mac is more reliable and has greater support of consumer applicaitons,
 and partly because I am not willing to put in the time to build my own arch install and tinker/maintain it.
@@ -15,13 +15,13 @@ goose chase from my CTF time.
 2)If I ever want to run challenges on my Ubuntu server, or some other random machine, all I have to do is boot the container.
 
 
-###Why not a VM?
+### Why not a VM?
 Virtual Machines are a great way to share entire system configurations. In fact, a VM would offer me both of the things I mentioned
 above. However, I do have a reasons for not wanting to use a VM. I feel that Docker images are much cleaner. They only have EXACTLY
 what you want and need the image to have. Furthermore, if your client is a linux machine, there is MUCH less overhead than with a VM.
 
 
-###What we want to be included:
+### What we want to be included:
 * Linux
 * gdb
 * PEDA
