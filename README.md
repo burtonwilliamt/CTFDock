@@ -21,7 +21,7 @@ above. However, I do have a reasons for not wanting to use a VM. I feel that Doc
 what you want and need the image to have. Furthermore, if your client is a linux machine, there is MUCH less overhead than with a VM.
 
 
-### What we want to be included:
+### What I want to be included:
 * Linux
 * gdb
 * PEDA
@@ -30,3 +30,5 @@ what you want and need the image to have. Furthermore, if your client is a linux
 * pwntools
 * angr
 * ropfinder
+* tmux
+* vim
