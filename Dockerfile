@@ -1,10 +1,11 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 RUN dpkg --add-architecture i386
 
 RUN apt-get update &&\
 	apt-get install -y \
 		libseccomp-dev \
+		curl \
 		git \
 		gdb \
 		vim \
@@ -27,6 +28,8 @@ RUN git clone https://github.com/longld/peda.git ~/peda; \
 RUN git clone https://github.com/radare/radare2.git ~/r2; \
 	~/r2/sys/install.sh
 
+#Pull the config files
+RUN curl -o /root/.tmux.conf https://raw.githubusercontent.com/burtonwilliamt/dotfiles/master/.tmux.conf
 
 
 #RUN apt-get update &&\
